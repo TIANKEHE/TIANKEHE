@@ -5,11 +5,17 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}「{{ site.chinese_last_name }}{{ site.chinese_first_name }}」
+        {{ site.first_name }} {{ site.middle_name }}
+        {{ site.last_name }}「{{ site.chinese_name }}」
       {% else %}
         {{ site.title }}
       {% endif %}
+      <a
+        href="{{ site.cv_file }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right"
+        > CV </a>
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
@@ -65,13 +71,13 @@ layout: default
     {% endif %}
 
     <!-- Social -->
-    {% if page.social %}
+    <!--{% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
-    {% endif %}
+    {% endif %}-->
 
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
