@@ -7,7 +7,7 @@ first_name: Tianke
 middle_name:
 last_name: He
 chinese_name: 贺天珂
-cv_file: assets/pdf/example_pdf.pdf
+cv_file: /assets/pdf/example_pdf.pdf
 email: Tianke.He@outlook.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.

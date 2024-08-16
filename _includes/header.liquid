@@ -109,6 +109,17 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
+          <!-- CV -->
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.cv_file }}" target="_blank" rel="noopener noreferrer">
+              CV
+              {% if page.permalink == '/' %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
